@@ -4,14 +4,15 @@ In this repository I will be showcasing what I learned in Android and the weekly
 ## Tasks Compeleted 
 #### Week 1
 <pre>
+
 The Following tasks were done:- 
   1.Learned Java<br>
     * Made Class Androidphone with proper varriable and methods.
     * Made a Dirver class to test out the Androidphone class.
   2.Learned git
-    * Made a repository [Android](https://github.com/justsom3guy/Android).
+    * Made a repository <a href="https://github.com/justsom3guy/Android">Android</a>.
     * Did the necessary follow-ups.
   3.Learned Android
-    * Went through [this](https://classroom.udacity.com/courses/ud834) course till module 3.
+    * Went through<a href="https://classroom.udacity.com/courses/ud834"> this </a>course till module 3.
     * Made an Android App "Love Hate"
- </pre>
+</pre>
