@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:id="@+id/love_image"
+            android:src="@drawable/l1"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/hate_image"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:layout_below="@id/love_image"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/h1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Love"
+            android:layout_alignRight="@id/love_image"
+            android:layout_alignBottom="@id/love_image"
+            android:onClick="love"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hate"
+            android:layout_alignRight="@id/hate_image"
+            android:layout_alignBottom="@id/hate_image"
+            android:onClick="hate"
+            />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
