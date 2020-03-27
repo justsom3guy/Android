@@ -29,6 +29,7 @@
             android:src="@drawable/h1" />
 
         <Button
+            android:id="@+id/love_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Love"
@@ -37,6 +38,7 @@
             android:onClick="love"
             />
         <Button
+            android:id="@+id/hate_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hate"

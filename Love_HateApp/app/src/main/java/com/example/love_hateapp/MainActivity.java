@@ -6,6 +6,7 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     String[] hate_images = {"@drawable/h3","@drawable/h2","@drawable/h4","@drawable/h1"};
     ImageView love_img= (ImageView) findViewById(R.id.love_image);
     ImageView hate_img= (ImageView) findViewById(R.id.hate_image);
+    Button loveB=(Button) findViewById(R.id.love_button);
+    Button hateB=(Button) findViewById(R.id.hate_button);
     Resources res = getResources();
     int i=1,j=1;
     public void love(View view){
@@ -27,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         i++;
         if(i>3)i=0;
     }
-    public void hate(View view){
-        int ResId = res.getIdentifier(hate_images[j], "drawable",getPackageName());
+    public void hate (View v){
+        int ResId = res.getIdentifier(hate_images[j], "drawable", getPackageName());
         hate_img.setImageResource(ResId);
         j++;
-        if(j>3)i=0;
+        if (j > 3) i = 0;
     }
 }
